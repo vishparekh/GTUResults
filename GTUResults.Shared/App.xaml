@@ -1,0 +1,29 @@
+<Application
+    x:Class="GTUResults.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:GTUResults"
+    xmlns:controls="using:GTUResults.Controls"
+    xmlns:common="using:GTUResults.Common"
+    xmlns:commands="using:GTUResults.Commands">
+
+  <!--Application Resources-->
+  <Application.Resources>
+    <ResourceDictionary>
+      <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="Styles/PlatformAppThemes.xaml"/>
+        <ResourceDictionary Source="Styles/AppThemes.xaml"/>
+      </ResourceDictionary.MergedDictionaries>
+
+      <x:String x:Key="AppName">GTU Results</x:String>
+      <x:String x:Key="AppTitle">GTU Results</x:String>
+
+      <!-- ItemClickCommand -->
+      <commands:ItemClickCommand x:Key="ItemClickCommand" />
+
+      <!-- Action Commands -->
+      <local:ActionCommands x:Key="ActionCommands"/>
+
+    </ResourceDictionary>
+  </Application.Resources>
+</Application>

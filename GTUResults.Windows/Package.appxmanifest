@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest"
+         xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest"
+         xmlns:appstudio="http://schemas.microsoft.com/developer/appx/2015/appstudio"
+         IgnorableNamespaces="appstudio">
+    
+  <Identity Name="1778Parekhs.GTUResults" Publisher="CN=8ADA0F6E-0F18-4D90-BC36-423C9CDC246E" Version="1.0.2.0" />
+
+  <Properties>
+    <DisplayName>GTU Results</DisplayName>
+    <PublisherDisplayName>Vishal Parekh</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+
+  <Prerequisites>
+    <OSMinVersion>6.3.0</OSMinVersion>
+    <OSMaxVersionTested>6.3.0</OSMaxVersionTested>
+  </Prerequisites>
+
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="GTUResults.App">
+      <m2:VisualElements DisplayName="GTU Results" Description="This is not the official application of GTU. It is our sincere effort to help you."
+                         ForegroundText="dark" 
+                         BackgroundColor="#ffffff"
+                         Square150x150Logo="Assets\Logo.png" Square30x30Logo="Assets\SmallLogo.png">
+        <m2:DefaultTile ShortName="GTU Results"
+                        Wide310x150Logo="Assets\Wide310x150Logo.png"
+                        Square70x70Logo="Assets\Square70x70Logo.png">
+          <m2:ShowNameOnTiles>
+            <m2:ShowOn Tile="square150x150Logo" />
+            <m2:ShowOn Tile="wide310x150Logo" />
+          </m2:ShowNameOnTiles>
+        </m2:DefaultTile>
+        <m2:SplashScreen Image="Assets\SplashScreen.png" BackgroundColor="#ffffff"/>
+        <m2:ApplicationView MinWidth="width320" />
+      </m2:VisualElements>
+    </Application>
+  </Applications>
+
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+    
+  <appstudio:Metadata>
+    <appstudio:Item Name="appId" Value="94ec227f-094d-4e40-8c07-3728d25230b9" />
+    <appstudio:Item Name="model" Version="1.11" />
+    <appstudio:Item Name="formula" Value="Wat81" Version="1.12.0411.1" />
+  </appstudio:Metadata>
+</Package>

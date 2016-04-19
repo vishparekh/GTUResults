@@ -1,0 +1,41 @@
+{
+  "baseURL": "http://result2.gtu.ac.in//Default.aspx",
+  "share": {
+    "enabled": true,
+    "title": "share",
+    "url": "{currentURL}",
+    "message": "Check out this web {url}"
+  },
+  "appBar": {
+    "enabled": true,
+    "buttons": [
+      {
+        "label": "Home",
+        "icon": "home",
+        "iconUrl": "",
+        "action": "home"
+      },
+      {
+        "label": "refresh",
+        "icon": "refresh",
+        "iconUrl": "",
+        "action": "refresh"
+      },
+      {
+        "label": "GTU Website",
+        "icon": "link",
+        "iconUrl": "",
+        "action": "http://gtu.ac.in/"
+      }
+    ]
+  },
+  "settings": {
+    "enabled": true,
+    "privacyUrl": "",
+    "title": "About",
+    "header": "Web App Template",
+    "HTMLText1": "The Web App Template deliver great mobile websites to your Windows Phone. Get convenient access to all of the site&apos;s mobile web features directly from your app list, plus the ability to pin a tile to your start screen.",
+    "HTMLText2": "",
+    "HTMLText3": ""
+  }
+}
